@@ -1,6 +1,10 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import Particles from "./components/particles";
+import {  Container, FullScreenContainer, StyledParticles, 
+          StyledTitle, StyledNav, StyledUl,
+          StyledLink } from "./pageStyle";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -9,9 +13,20 @@ const navigation = [
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Particles />
-      <h1>MateusPierre</h1>
-    </main>
+    <FullScreenContainer>
+      <StyledNav>
+      <StyledUl>
+        {navigation.map((item) => (
+          <StyledLink key={item.href} href={item.href}>
+            {item.name}
+          </StyledLink>
+        ))}
+      </StyledUl>
+    </StyledNav>
+      {/* <Container/> */}
+        <StyledParticles quantity={600}/>
+        <StyledTitle>mateus pierre</StyledTitle>
+      {/* <Container/> */}
+    </FullScreenContainer>
   );
 }

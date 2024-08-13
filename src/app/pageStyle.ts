@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import Particles from "./components/particles";
 import Link from 'next/link';
-
+import { TypeAnimation } from 'react-type-animation';
 // Definindo as animações
 const glow = keyframes`
   0% { opacity: 0; }
@@ -57,12 +57,15 @@ export const StyledUl = styled.ul`
 
 // Estilização do Link
 export const StyledLink = styled(Link)`
-  font-size: 0.875rem; /* Equivale a text-sm */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+font-family: "Roboto", sans-serif;
+  font-size: 0.875rem; 
   color: #666666; 
   transition: color 0.5s;
 
   &:hover {
-    color: #efefec; /* Equivale a text-zinc-300 */
+    color: #efefec; 
   }
 `;
 
@@ -78,6 +81,16 @@ export const Container = styled.div`
     animation: ${glow} 1.5s infinite, ${fadeLeft} 1s forwards;
   }
 `;
+
+export const StyledTypeAnimation = styled(TypeAnimation)`
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    font-size: 0.875rem;
+    display: inline-block;
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+`
 
 export const StyledParticles = styled(Particles)`
   position: absolute;
@@ -103,19 +116,19 @@ export const StyledTitle = styled.h1`
 
   padding: 0.875rem 0.125rem; /* Equivale a py-3.5 px-0.5 */
   z-index: 10;
-  font-size: 5.25rem; /* Base text size, ajustada abaixo com media queries */
+  font-size: 6.25rem; /* Base text size, ajustada abaixo com media queries */
   color: #efefec;
+  font-weight: 700;
+  margin-bottom: 2rem;
   transition-duration: 1000ms;
   background-color: white;
-  cursor: default;
-  font-family: 'YourFontDisplay', sans-serif; /* Ajuste para sua fonte */
   white-space: nowrap;
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Roboto", sans-serif;
   
   /* Adicionando animação */
-  animation: ${animateTitle} 1.5s ease-in-out infinite;
+  animation: ${animateTitle} 3.5s ease-in-out infinite;
 
   /* Text sizes for different screen sizes */
   @media (max-width: 640px) { /* sm:text-6xl */

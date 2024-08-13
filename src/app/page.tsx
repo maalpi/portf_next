@@ -1,10 +1,9 @@
 "use client"
-import Image from "next/image";
-import styles from "./page.module.css";
-import Particles from "./components/particles";
+
+import { TypeAnimation } from 'react-type-animation';
 import {  Container, FullScreenContainer, StyledParticles, 
           StyledTitle, StyledNav, StyledUl,
-          StyledLink } from "./pageStyle";
+          StyledLink, StyledTypeAnimation } from "./pageStyle";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -25,8 +24,22 @@ export default function Home() {
     </StyledNav>
       {/* <Container/> */}
         <StyledParticles quantity={600}/>
-        <StyledTitle>mateus pierre</StyledTitle>
+        <StyledTitle>Mateus Pierre</StyledTitle>
       {/* <Container/> */}
+      <StyledTypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Bem-vindo ao meu portfólio. Sou um desenvolvedor Back-End',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Bem-vindo ao meu portfólio. Sou um desenvolvedor Front-End',
+        1000,
+        'Bem-vindo ao meu portfólio. Sou um desenvolvedor Full-Stack',
+        1000
+      ]}
+      wrapper="span"
+      speed={40}
+      repeat={0}
+    />
     </FullScreenContainer>
   );
 }

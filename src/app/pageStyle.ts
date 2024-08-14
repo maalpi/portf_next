@@ -40,6 +40,7 @@ export const FullScreenContainer = styled.div`
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
+  /* background: rgba(255,255,255, 0.2); */
 `;
 
 export const StyledNav = styled.nav`

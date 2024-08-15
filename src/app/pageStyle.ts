@@ -95,7 +95,7 @@ export const StyledTypeAnimation = styled(TypeAnimation)`
 
 export const StyledParticles = styled(Particles)`
   position: absolute;
-  inset: 0; // Equivalente a top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0;
   z-index: -10;
   animation: ${fadeIn} 1.5s ease-in-out;
 `;
@@ -115,9 +115,9 @@ const animateTitle = keyframes`
 export const StyledTitle = styled.h1`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-  padding: 0.875rem 0.125rem; /* Equivale a py-3.5 px-0.5 */
+  padding: 0.875rem 0.125rem; 
   z-index: 10;
-  font-size: 6.25rem; /* Base text size, ajustada abaixo com media queries */
+  font-size: 6.25rem; 
   color: #efefec;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -127,16 +127,15 @@ export const StyledTitle = styled.h1`
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "Roboto", sans-serif;
-  
-  /* Adicionando animação */
+
   animation: ${animateTitle} 3.5s ease-in-out infinite;
 
-  /* Text sizes for different screen sizes */
-  @media (max-width: 640px) { /* sm:text-6xl */
+
+  @media (max-width: 640px) {
     font-size: 2.75rem;
   }
 
-  @media (max-width: 768px) { /* md:text-9xl */
+  @media (max-width: 768px) { 
     font-size: 3.25rem;
   }
 `;

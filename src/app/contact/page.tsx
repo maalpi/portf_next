@@ -6,6 +6,7 @@ import {CardFooter, Image, Button} from "@nextui-org/react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Link from "next/link";
+import {StyledCard, SpanCard, SpanIcon} from "./styed";
 
 const socials = [
 	{
@@ -32,15 +33,14 @@ export default function Contato() {
 	return (
         <FullScreenContainer>
             <Navigation/>
-            <h1>Pagina Contato</h1>
-            {socials.map((s) => (
-                <Card>
-                    <Link href={s.href}>
-                        <span>{s.icon}</span>
-                        <span>{s.handle}</span>
-                        <span>{s.label}</span>
-                    </Link>
-                </Card>
-            ))}
+			<StyledCard>
+				{socials.map((s) => (
+					<Card href={s.href}>
+						<SpanIcon>{s.icon}</SpanIcon>
+						<SpanCard><strong>{s.handle}</strong></SpanCard>
+						<SpanCard>{s.label}</SpanCard>
+					</Card>
+				))}
+			</StyledCard>
         </FullScreenContainer>
     );}

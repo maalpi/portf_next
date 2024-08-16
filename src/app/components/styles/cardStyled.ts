@@ -14,7 +14,8 @@ const fadeIn = keyframes`
 export const StyledCard = styled.div`
     position: relative;
     width: 400px; 
-    height: 450px;
+    height: 425px;
+    margin-right: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     display: flex;
@@ -34,11 +35,13 @@ export const StyledCard = styled.div`
     @media (max-width: 640px) { 
         width: 350px;
         height: 100px;
+        margin-right: 0;
     }
 
     @media (max-width: 768px) { 
         width: 350px;
         height: 160px; 
+        margin-right: 0;
     }
 `;
 

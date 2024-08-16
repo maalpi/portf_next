@@ -9,7 +9,7 @@ export const Navigation: React.FC = () => {
     return (
         <HeaderContainer>
             <HeaderContent>
-                <div style={{ display: "flex", gap: "2rem" }}>
+                <div style={{ display: "flex", gap: "1rem", float: "right" }}>
                     <StyledLink href="/projects">Projects</StyledLink>
                     <StyledLink href="/contact">Contact</StyledLink>
                 </div>

@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export const HeaderContainer = styled.header`
     position: fixed;
+    width: 100%;
     inset: 0 auto auto 0;
     top: 0;
     z-index: 50;
@@ -12,7 +13,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderContent = styled.div`
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -24,6 +25,7 @@ export const HeaderContent = styled.div`
 export const StyledLink = styled(Link)`
     color: #a1a1aa; 
     transition: color 0.2s ease;
+    font-family: sans-serif;
 
     &:hover {
         color: #e4e4e7; 
@@ -31,7 +33,8 @@ export const StyledLink = styled(Link)`
 `;
 
 export const ArrowLink = styled(StyledLink)`
-    color: #d4d4d8; 
+    color: #a1a1aa; 
+    float: left;
 
     &:hover {
         color: #e4e4e7; 

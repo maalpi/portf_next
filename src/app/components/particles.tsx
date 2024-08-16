@@ -6,6 +6,7 @@ import { useMousePosition } from '@/utils/mouse';
 interface ParticlesProps {
 	className?: string;
 	quantity?: number;
+	color?: string;
 	staticity?: number;
 	ease?: number;
 	refresh?: boolean;
@@ -14,6 +15,7 @@ interface ParticlesProps {
 export default function Particles({
 	className = "",
 	quantity = 30,
+	color = `rgba(255, 255, 255, 0.6)`,
 	staticity = 50,
 	ease = 50,
 	refresh = false,
@@ -73,6 +75,7 @@ export default function Particles({
 		translateX: number;
 		translateY: number;
 		size: number;
+		color: string;
 		alpha: number;
 		targetAlpha: number;
 		dx: number;
@@ -100,6 +103,7 @@ export default function Particles({
 		const translateY = 0;
 		const size = Math.floor(Math.random() * 2) + 0.1;
 		const alpha = 0;
+		const color = `rgba(255, 255, 255, 0.6)`;
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
 		const dx = (Math.random() - 0.5) * 0.2;
 		const dy = (Math.random() - 0.5) * 0.2;
@@ -107,6 +111,7 @@ export default function Particles({
 		return {
 			x,
 			y,
+			color,
 			translateX,
 			translateY,
 			size,
@@ -121,10 +126,11 @@ export default function Particles({
 	const drawCircle = (circle: Circle, update = false) => {
 		if (context.current) {
 			const { x, y, translateX, translateY, size, alpha } = circle;
+			const particleColor = color;
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`; // cor das particulas
+			context.current.fillStyle = particleColor; // cor das particulas
 			context.current.fill();
 			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 

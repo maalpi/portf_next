@@ -9,7 +9,6 @@ export const FullScreenContainer = styled.div`
   justify-content: center;
   width: 100vw;
   height: auto;
-  margin-top: 10%;
   overflow: hidden;
   background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
   /* background: rgba(255,255,255, 0.2); */
@@ -17,7 +16,7 @@ export const FullScreenContainer = styled.div`
 
 export const Subtitle = styled.h2`
     animation: fade-up 0.5s ease;
-    
+    margin-top: 7%;
     margin-left: 13.5%;
     color: #efefec;
     font-size: 1.8rem;
@@ -36,13 +35,13 @@ export const Paragrafo = styled.p`
 `
 // Componente estilizado usando styled-components
 export const GridContainer = styled.div`
-  margin: 0.5rem 0; /* Equivalente a my-10 */
+  margin: 0.5rem 0; 
   display: grid;
   width: 100%;
   max-width: 1280px; /* Equivalente a max-w-screen-xl */
-  animation: fade-up 0.5s ease; /* Animate fade-up (assumindo que a animação seja pré-definida) */
+  animation: fade-up 0.5s ease; 
   grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
-  gap: 1.25rem; /* gap-5 */
+  gap: .75rem; /* gap-5 */
   padding: 0 1.25rem; /* px-5 */
 
   @media (min-width: 768px) { /* md:grid-cols-3 */

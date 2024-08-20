@@ -14,20 +14,21 @@ const fadeIn = keyframes`
 export const StyledPrincipal = styled.div`
     position: relative;
     width: 847px; 
-    height: 225px;
-    margin-right: 1rem;
+    height: 325px;
+
+    padding-left: 5rem; /* Adiciona espaço à esquerda */
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     cursor: pointer;
     animation: ${fadeIn} 1.5s ease-in-out;
     transition: all 400ms ease;
-
+    font-family: sans-serif;
     &:hover{
         border: 2px solid rgba(255, 255, 255, 0.7);
     }
@@ -47,6 +48,7 @@ export const StyledPrincipal = styled.div`
 
 export const StyledCard = styled.div`
     position: relative;
+    font-family: sans-serif;
     width: 400px; 
     height: 225px;
     margin-right: 1rem;
@@ -55,7 +57,7 @@ export const StyledCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     cursor: pointer;
@@ -78,6 +80,21 @@ export const StyledCard = styled.div`
         margin-right: 0;
     }
 `;
+
+export const Title = styled.h2`
+    align-self: flex-start;
+    width: 250px;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #efefec;
+`
+
+export const Parg = styled.p`
+    align-self: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    color: #efefec;
+`
 
 export const CardLink = styled(Link)`
     color: white;

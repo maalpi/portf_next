@@ -14,7 +14,7 @@ const socials = [
 		href: "https://www.linkedin.com/in/mateus-pierre-96799218a/",
 		label: "Linkedin",
 		handle: "Mateus Pierre",
-		color: `rgba(0, 114, 177, 0.6)`,
+		color: `rgba(0, 114, 177, 0.8)`,
 		colorGalaxy: `rgba(0, 114, 177, 0.2)`,
 	},
 	{
@@ -22,7 +22,7 @@ const socials = [
 		href: "mailto:pierremateus81@gmail.com",
 		label: "Email",
 		handle: "pierremateus81@gmail.com",
-		color: "rgba(219, 68, 55, 0.6)",
+		color: "rgba(219, 68, 55, 0.8)",
 		colorGalaxy: "rgba(219, 68, 55, 0.2)",
 	},
 	{
@@ -37,7 +37,7 @@ const socials = [
 
 export default function Contato() {
 	return (
-        <FullScreenContainer>
+        <FullScreenContainer style={{background: 'linear-gradient(to top left, rgba(74, 85, 104, 0.3), black, rgba(74, 85, 104, 0.3))' }}>
             <Navigation/>
 			<StyledCard>
 				{socials.map((s) => (

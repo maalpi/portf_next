@@ -11,7 +11,7 @@ const fadeIn = keyframes`
   }
 `;
 
-export const StyledCard = styled.div<{ color: string }>`
+export const StyledCard = styled.div`
     position: relative;
     width: 400px; 
     height: 425px;

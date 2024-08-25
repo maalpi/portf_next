@@ -24,6 +24,13 @@ export const Subtitle = styled.h2`
     align-self: flex-start;
     text-align: left;
 
+    @media (min-width: 2555px) {
+      margin-left: 24.5%;
+    }
+
+    @media (max-width: 1600px) { 
+      margin-left: 4.5%;
+    }
     @media (max-width: 768px) { 
       margin-top: 20%
     }
@@ -36,6 +43,14 @@ export const Paragrafo = styled.p`
     padding: 1rem 0;
     color: #666666;
     font-family: sans-serif;
+
+    @media (max-width: 1600px) { 
+      margin-left: 4.5%;
+    }
+
+    @media (min-width: 2555px) {
+      margin-left: 24.5%;
+    }
 `
 // Componente estilizado usando styled-components
 export const GridContainer = styled.div`

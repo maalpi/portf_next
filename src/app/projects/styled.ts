@@ -10,7 +10,7 @@ export const FullScreenContainer = styled.div`
   width: 100vw;
   height: auto;
   overflow: hidden;
-  background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
+  background: linear-gradient(to top left, rgba(74, 85, 104, 0.3), black, rgba(74, 85, 104, 0.3));
   /* background: rgba(255,255,255, 0.2); */
 `;
 

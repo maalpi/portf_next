@@ -11,12 +11,12 @@ const fadeIn = keyframes`
   }
 `;
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.div<{ color: string }>`
     position: relative;
     width: 400px; 
     height: 425px;
     margin-right: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -29,8 +29,8 @@ export const StyledCard = styled.div`
     transition: all 400ms ease;
     
     &:hover{
-        border: 2px solid rgba(255, 255, 255, 0.7);
-        background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.1), black);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        background: linear-gradient(to top left, black, ${({ color }) => color}, black);
     }
 
     @media (max-width: 640px) { 

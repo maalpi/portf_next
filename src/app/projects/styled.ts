@@ -25,11 +25,11 @@ export const Subtitle = styled.h2`
     text-align: left;
 
     @media (min-width: 2555px) {
-      margin-left: 26.5%;
+      margin-left: 25%;
     }
 
     @media (max-width: 1600px) { 
-      margin-left: 4.5%;
+      margin-left: 8.5%;
     }
     @media (max-width: 768px) { 
       margin-top: 20%
@@ -49,7 +49,7 @@ export const Paragrafo = styled.p`
     }
 
     @media (min-width: 2555px) {
-      margin-left: 26.5%;
+      margin-left: 25%;
     }
 `
 // Componente estilizado usando styled-components

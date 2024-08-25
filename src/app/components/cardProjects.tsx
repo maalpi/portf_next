@@ -2,7 +2,7 @@
 
 import React, { PropsWithChildren, useState } from "react";
 import Particles from "./particles";
-import { CardLink, StyledCard, StyledPrincipal, Parg, Title } from "./styles/cardProjects";
+import { CardLink, StyledCard, StyledPrincipal, Parg, Title, Botao } from "./styles/cardProjects";
 
 export const CardProject: React.FC<PropsWithChildren<{ href: string, title: string, disc: string}>> = ({ children, href, title, disc }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -16,6 +16,7 @@ export const CardProject: React.FC<PropsWithChildren<{ href: string, title: stri
                     <Title>{title}</Title>
                     {children}
                     <Parg>{disc}</Parg>
+                    <Botao>Veja mais</Botao>
                 </CardLink>
 
             </StyledPrincipal>

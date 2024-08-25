@@ -3,6 +3,7 @@
 import React, { PropsWithChildren, useState } from "react";
 import Particles from "./particles";
 import { CardLink, StyledCard, StyledPrincipal, Parg, Title, Botao } from "./styles/cardProjects";
+import styled from 'styled-components';
 
 export const CardProject: React.FC<PropsWithChildren<{ href: string, title: string, disc: string}>> = ({ children, href, title, disc }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +25,8 @@ export const CardProject: React.FC<PropsWithChildren<{ href: string, title: stri
             <StyledCard onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 style={{
-                    height: title === "mateuspierre.tech" ? "325px;" : "225px"
+                    height: title === "mateuspierre.tech" ? "325px" : "225px",
+                    
                   }}>
                 <CardLink href={href} target="_blank">
                     <Title>{title}</Title>

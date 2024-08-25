@@ -15,7 +15,6 @@ export const StyledPrincipal = styled.div`
     position: relative;
     width: 847px; 
     height: 325px;
-
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 0.5rem;
     display: flex;
@@ -33,18 +32,17 @@ export const StyledPrincipal = styled.div`
     &:hover{
         border: 1px solid rgba(255, 255, 255, 0.7);
         color: white;
+        background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
     }
 
     @media (max-width: 640px) { 
         width: 350px;
-        height: 100px;
-        margin-right: 0;
+        height: 325px;
     }
 
     @media (max-width: 768px) { 
         width: 350px;
-        height: 160px; 
-        margin-right: 0;
+        height: 325px; 
     }
 `;
 
@@ -53,9 +51,8 @@ export const StyledCard = styled.div`
     font-family: sans-serif;
     width: 400px; 
     height: 255px;
-
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,11 +61,13 @@ export const StyledCard = styled.div`
     overflow: hidden;
     cursor: pointer;
     color: #666666;
+    animation: ${fadeIn} 1.5s ease-in-out;
     transition: all 400ms ease;
 
     &:hover{
         border: 1px solid rgba(255, 255, 255, 0.7);
         color: white;
+        background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
     }
 
     @media (max-width: 640px) { 
@@ -112,8 +111,16 @@ export const Botao = styled.p`
     font-family: 'Roboto';
     padding: 30px;
     max-width: 700px;
-    margin-top: 35vh;
+    margin-top: 25vh;
     position: absolute;
+
+    @media (max-width: 640px) { 
+        display: none;
+    }
+
+    @media (max-width: 768px) { 
+        display: none; 
+    }
 `
 
 export const CardLink = styled(Link)`

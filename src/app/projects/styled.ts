@@ -23,6 +23,14 @@ export const Subtitle = styled.h2`
     font-family: sans-serif;
     align-self: flex-start;
     text-align: left;
+
+    @media (max-width: 640px) { 
+      margin-top: 19%
+    }
+
+    @media (max-width: 768px) { 
+      margin-top: 19%
+    }
 `
 
 export const Paragrafo = styled.p`
@@ -38,17 +46,18 @@ export const GridContainer = styled.div`
   margin: 0.5rem 0; 
   display: grid;
   width: 100%;
-  max-width: 1280px; /* Equivalente a max-w-screen-xl */
+  max-width: 1280px; 
   animation: fade-up 0.5s ease; 
-  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
-  gap: .75rem; /* gap-5 */
-  padding: 0 1.25rem; /* px-5 */
+  grid-template-columns: repeat(1, 1fr);
+  gap: .75rem; 
+  padding-left: 0.75rem;
 
-  @media (min-width: 768px) { /* md:grid-cols-3 */
+  @media (min-width: 768px) { 
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 1.25rem; 
   }
 
-  @media (min-width: 1280px) { /* xl:px-0 */
+  @media (min-width: 1280px) { 
     padding: 0;
   }
 `;

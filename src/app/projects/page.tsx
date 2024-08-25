@@ -15,7 +15,7 @@ const reactTopo = [
         icons: [FaPython, FaReact],
 		href: "https://www.linkedin.com/in/mateus-pierre-96799218a/",
 		title: "Transcrição de video",
-		disc: "extensão que criei para transcrever vídeos do YouTube. Utilizei Python (Flask) para desenvolver a API que recebe a URL do vídeo, realiza a transcrição e retorna o texto em formato .txt. Para a extensão do Chrome, usei React + Vite.",
+		disc: "extensão chrome para transcrever vídeos do YouTube. Utilizei Python (Flask) para desenvolver a API que recebe a URL do vídeo, realiza a transcrição e retorna o texto em formato .txt para a extensão do Chrome, usei React + Vite.",
 		color: `rgba(0, 114, 177, 0.6)`,
 	},
 	{
@@ -25,6 +25,7 @@ const reactTopo = [
 		disc: "Repositorio do meu portfolio em Next.js, esse que você está vendo",
 		color: "rgba(255, 255, 255, 0.6)",
 	},
+	
 ];
 
 const reactTree = [
@@ -120,9 +121,8 @@ const projGeral = [
 export default function Contato() {
     return (
         <>
-        <Navigation/>
         <FullScreenContainer>
-            
+			<Navigation/>
             <Subtitle>Projetos</Subtitle>
             <Paragrafo>Últimos projetos feitos</Paragrafo>
             <hr style={{width:'1270px', background:'rgba(80,80,80,0.5)', height: '0.1px', border:'none', margin:'1.5rem'}}/>
@@ -141,7 +141,7 @@ export default function Contato() {
                 <GridContainer>
                     {reactTree.map((s) => (
                         <CardProject href={s.href} title={s.title} disc={s.disc}>
-                            <div style={{ display: 'flex', gap: '10px', alignSelf:'flex-start', margin:'1rem 0', padding: '0px 30px' }}>
+                            <div style={{ display: 'flex', gap: '15px', alignSelf:'flex-start', margin:'1rem 0', padding: '0px 30px' }}>
                                 {s.icons.map((Icon, index) => (
                                 <Icon key={index} size={28} />
                                 ))}
@@ -154,7 +154,7 @@ export default function Contato() {
                 <GridContainer>
                     {projGeral.map((s) => (
                         <CardProject href={s.href} title={s.title} disc={s.disc}>
-                            <div style={{ display: 'flex', gap: '10px', alignSelf:'flex-start', margin:'1rem 0', padding: '0px 30px' }}>
+                            <div style={{ display: 'flex', gap: '15px', alignSelf:'flex-start', margin:'1rem 0', padding: '0px 30px' }}>
                                 {s.icons.map((Icon, index) => (
                                 <Icon key={index} size={28} />
                                 ))}

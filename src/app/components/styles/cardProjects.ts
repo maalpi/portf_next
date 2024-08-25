@@ -35,13 +35,8 @@ export const StyledPrincipal = styled.div`
         background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
     }
 
-    @media (max-width: 640px) { 
-        width: 350px;
-        height: 325px;
-    }
-
     @media (max-width: 768px) { 
-        width: 350px;
+        width: 340px;
         height: 325px; 
     }
 `;
@@ -77,7 +72,7 @@ export const StyledCard = styled.div`
     }
 
     @media (max-width: 768px) { 
-        width: 350px;
+        width: 340px;
         height: 160px; 
 
     }

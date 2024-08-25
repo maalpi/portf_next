@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
     justify-content: center;
 
     @media (max-width: 768px) { 
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 `
 

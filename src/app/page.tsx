@@ -1,7 +1,7 @@
 "use client"
 
 import { TypeAnimation } from 'react-type-animation';
-import {  Container, FullScreenContainer, StyledParticles, 
+import {   FullScreenContainer, StyledParticles, 
           StyledTitle, StyledNav, StyledUl,
           StyledLink, StyledTypeAnimation } from "./pageStyle";
 

@@ -41,10 +41,16 @@ export const FullScreenContainer = styled.div`
   overflow: hidden;
   background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.2), black);
   /* background: rgba(255,255,255, 0.2); */
+  margin: 0;
+  padding: 0;
+  @media (max-width: 768px) { 
+    height: 100vh;
+    overflow: hidden;
+  }
 `;
 
 export const StyledNav = styled.nav`
-  margin-bottom: 2rem ;
+  margin-bottom: 1rem ;
   animation: ${fadeIn} 1.5s ease-in-out;
 `;
 
@@ -70,18 +76,6 @@ font-family: "Roboto", sans-serif;
   }
 `;
 
-export const Container = styled.div`
-   display: none;
-    width: 100vw;
-    height: 1px;
-    background: linear-gradient(to right, rgba(74, 85, 104, 0) 0%, rgba(74, 85, 104, 0.5) 50%, rgba(74, 85, 104, 0) 100%);
-
-
-  @media (min-width: 768px) {
-    display: block;
-    animation: ${glow} 1.5s infinite, ${fadeLeft} 1s forwards;
-  }
-`;
 
 export const StyledTypeAnimation = styled(TypeAnimation)`
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');

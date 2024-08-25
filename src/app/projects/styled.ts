@@ -24,12 +24,8 @@ export const Subtitle = styled.h2`
     align-self: flex-start;
     text-align: left;
 
-    @media (max-width: 640px) { 
-      margin-top: 19%
-    }
-
     @media (max-width: 768px) { 
-      margin-top: 19%
+      margin-top: 20%
     }
 `
 

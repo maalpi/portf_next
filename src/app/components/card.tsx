@@ -11,7 +11,7 @@ export const Card: React.FC<PropsWithChildren<{ href: string, color: string }>> 
         <StyledCard onMouseEnter={() => setIsHovered(true)}
              onMouseLeave={() => setIsHovered(false)}>
             
-            {isHovered && <StyledParticles quantity={100} color={color}/>}
+            {isHovered && <StyledParticles quantity={200} color={color}/>}
             <CardLink href={href} target="_blank">
                 {children}
             </CardLink>

@@ -27,9 +27,10 @@ export const StyledCard = styled.div`
     cursor: pointer;
     animation: ${fadeIn} 1.5s ease-in-out;
     transition: all 400ms ease;
-
+    
     &:hover{
         border: 2px solid rgba(255, 255, 255, 0.7);
+        background: linear-gradient(to top left, black, rgba(74, 85, 104, 0.1), black);
     }
 
     @media (max-width: 640px) { 

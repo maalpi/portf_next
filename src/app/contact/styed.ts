@@ -5,6 +5,10 @@ export const StyledCard = styled.div`
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 768px) { 
+        margin-top: 2rem;
+    }
 `
 
 export const SpanCard = styled.span`
@@ -14,13 +18,9 @@ export const SpanCard = styled.span`
     margin-bottom: 2.5rem;
     font-family: "Roboto",sans-serif;
 
-    @media (max-width: 640px) { 
-        font-size: 1.2rem;
-
-    }
-
     @media (max-width: 768px) { 
         font-size: 1.2rem;
+        margin-bottom: 0.5rem;
 
     }
 `
@@ -45,5 +45,13 @@ export const SpanIcon = styled.span`
         color: #ffffff; 
         background-color: #18181b; 
         border-color: #e4e4e7; 
+    }
+
+    @media (max-width: 640px) { 
+        margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) { 
+        margin-bottom: 0.5rem;
     }
 `
